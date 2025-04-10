@@ -12,7 +12,10 @@ const csrf = document.getElementsByName('csrfmiddlewaretoken')
 const url = window.location.href
 
 const alertBox = document.getElementById('alert-box')
-console.log('csrf', csrf[0].value)
+
+const dropzone = document.getElementById('my-dropzone')
+const addbtn = document.getElementById('add-btn')
+const closeBtns = [...document.getElementsByClassName('add-modal-close')]
  
 const getCookie = (name) => {
     let cookieValue = null;
@@ -161,9 +164,9 @@ postForm.addEventListener('submit', e=> {
                         </div>
                 `)
                 likeUnlikePosts()
-                $('#addPostModal').modal('hide')
+                // $('#addPostModal').modal('hide')
                 handleAlerts('success', 'New posts added!')
-                postForm.reset()
+                // postForm.reset()
 
 
         },
@@ -173,5 +176,20 @@ postForm.addEventListener('submit', e=> {
         }
     })
 })
+
+
+addbtn.addEventListener('click', ()=> {
+    dropzone.classList.remove('not-visible')
+})
+
+closeBtns.forEach(btn => btn.addEventListener('click', () => {
+    console.log('Close button clicked')  // For debugging
+    postForm.reset()
+
+    // Only hide dropzone, not the modal
+    if (!dropzone.classList.contains('not-visible')) {
+        dropzone.classList.add('not-visible')
+    }
+}))
 
 getData()
