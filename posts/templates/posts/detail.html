@@ -48,13 +48,13 @@
                     </div>
                     <div class="modal-body">
                         Are you sure you want to delete <b>"{{obj.title}}"</b>?
+                    </div>
+                    <div class="modal-footer">
                         <form id="delete-form">
-                             {% csrf_token %}
-                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-success">delete</button>
-                            </div>
-                        </form>
+                            {% csrf_token %}
+                               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                               <button type="submit" class="btn btn-success">delete</button>
+                       </form>
                     </div>
                 </div>
             </div>
