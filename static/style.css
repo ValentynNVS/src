@@ -12,3 +12,213 @@
     background-color: aliceblue !important;
 }
 
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1; /* Light neutral background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #2c3e50; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2C3E50; /* Dark background for navbar */
+    border-bottom: 3px solid #16a085; /* Accent line */
+}
+
+.navbar .navbar-brand {
+    font-size: 1.7em;
+    color: #f39c12; /* Golden color for the brand */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ecf0f1;
+    font-weight: 600;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #f39c12; /* Golden color on hover */
+    text-decoration: underline;
+}
+
+/* Main Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+button:hover {
+    background-color: #16a085;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #16a085; /* Accent color */
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-header .modal-title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 30px;
+    font-size: 1.1em;
+}
+
+.modal-footer button {
+    font-size: 1.1em;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.modal-footer .btn-success {
+    background-color: #27ae60;
+    border-color: #2ecc71;
+}
+
+.modal-footer .btn-danger {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+}
+
+/* Posts Section */
+#posts-box {
+    margin-top: 30px;
+}
+
+.post-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.post-card .card-body {
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.post-card .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.post-card .card-text {
+    color: #7f8c8d;
+}
+
+.post-card .like-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.post-card .like-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+/* Spinner */
+#spinner-box {
+    display: none;
+}
+
+#spinner-box.show {
+    display: block;
+}
+
+/* Load More Button */
+#load-btn {
+    font-size: 1.2em;
+    padding: 12px 24px;
+    border-radius: 25px;
+    background-color: #2980b9;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#load-btn:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+/* End Box */
+#end-box {
+    margin-top: 20px;
+}
+
+/* Alert Box */
+#alert-box {
+    margin-bottom: 20px;
+}
+
+/* Dropzone */
+.dropzone {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    border: 2px dashed #2980b9;
+    padding: 20px;
+}
+
+.dropzone .dz-message {
+    font-size: 1.2em;
+    color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
